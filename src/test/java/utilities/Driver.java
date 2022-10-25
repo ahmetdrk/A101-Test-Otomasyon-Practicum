@@ -50,6 +50,17 @@ public class Driver {
                     driver = new ChromeDriver();
                     driver.manage().window().maximize();
                     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--incognito");
+                    options.addArguments("--start-maximized");
+                    options.addArguments("--ignore-certificate-errors");
+                    options.addArguments("--allow-insecure-localhost");
+                    options.addArguments("--acceptInsecureCerts");
+                    options.addArguments("--disable-blink-features=AutomationControlled");
+                    options.addArguments("--disable-extensions");
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver(options);
                     break;
 
                 case "firefox":
@@ -75,11 +86,11 @@ public class Driver {
         }
     }
 
-    public synchronized static WebDriver setDriver(String browser) {
+   /* public synchronized static WebDriver setDriver(String browser) {
         if (driver == null) {
             browser = browser == null ? ConfigurationReader.getProperty("browser") : browser;
 
-            switch (browser) {
+           switch (browser) {
 
                 case "chrome":
                     ChromeOptions options = new ChromeOptions();
@@ -88,8 +99,8 @@ public class Driver {
                     options.addArguments("--ignore-certificate-errors");
                     options.addArguments("--allow-insecure-localhost");
                     options.addArguments("--acceptInsecureCerts");
-                    //options.addArguments("--disable-blink-features-AutomationControlled");
-                    //options.addArguments("--disable-extensions");
+                    options.addArguments("--disable-blink-features-AutomationControlled");
+                    options.addArguments("--disable-extensions");
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(options);
                     break;
@@ -99,9 +110,11 @@ public class Driver {
         }
 
         return null;
+
+    */
     }
 
-}
+
 
 
 

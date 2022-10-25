@@ -10,7 +10,7 @@ import static org.openqa.selenium.Keys.ENTER;
 
 public class StepDefinition {
 
-    Hepsiburada_page hepsiburada_page = new Hepsiburada_page ();
+    Hepsiburada_page hepsiburada_page = new Hepsiburada_page();
 
     @BeforeMethod
     public void setupMethod() {
@@ -21,7 +21,6 @@ public class StepDefinition {
     @Test
     public void test() {
 
-
         hepsiburada_page.cerezKullanımıKabul.click();
         BrowserUtils.sleep(2);
 
@@ -31,11 +30,14 @@ public class StepDefinition {
         hepsiburada_page.GirisYapButton.click();
         BrowserUtils.sleep(2);
 
-        hepsiburada_page.email.sendKeys("ahmet_eagle1903@hotmail.com");
+        hepsiburada_page.email.sendKeys("ahmet_eagle1903@hotmail.com" + ENTER);
         BrowserUtils.sleep(2);
 
-        //hepsiburada_page.loginButton.click();
-        //BrowserUtils.sleep(2);
+        hepsiburada_page.sifre.sendKeys("Ao131015" + ENTER);
+        BrowserUtils.sleep(2);
+
+
+
 
 
     }

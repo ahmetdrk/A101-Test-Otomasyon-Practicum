@@ -20,4 +20,7 @@ public class Hepsiburada_page extends BasePage{
 
     @FindBy(id = "btnLogin")
     public WebElement loginButton;
+
+    @FindBy(id = "txtPassword")
+    public WebElement sifre;
 }
