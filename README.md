@@ -2,9 +2,6 @@
 
 https://user-images.githubusercontent.com/97681607/200600500-f2034dbf-9923-4d4e-a69c-ad7f488b3da6.mp4
 
-Kullanılacak Teknolojiler: Selenium
-Konu: Hepsiburada.com üzerinden sepete ürün eklenmesi 
-
 1. Kullanıcı girişi yapılarak sepete ürün eklenmesi
 Kullanıcı Hepsiburada.com sitesini ziyaret eder.
 Kullanıcı giriş işlemi yapılır.
@@ -18,14 +15,7 @@ Kullanıcı Hepsiburada.com sitesini ziyaret eder.
 Kullanıcı, Arama sonucunda ekrana gelen ürün listesinden (veya tek bir sonuç da dönmüş olabilir) ürün seçer.
 Seçilen ürün için 2 tane farklı satıcıdan ürün seçilip sepete eklenir.
 Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında doğrulanmalıdır.
-Gereksinimler
-Proje Java programlama dilinde yazılmalıdır. Maven repo kullanılmalıdır.
-Kodlar github üzerinden paylaşılması gereklidir. 
-Yazılacak senaryo için Selenium ve JUnit/Testng kullanılmalıdır.
-Assertions kullanarak senaryonun doğru çalışırlığı kontrol edilmelidir.
-Log kullanılmalıdır.
-Page object model uygulanmalıdır.
-OOP prensiplerine uygun geliştirilmelidir.
+
 
 Bu bir Maven projesi ve Java programlama dili kullandım. IntelliJ IDE’m. Test otomasyonu için Selenium kullandım. Assertion ve annotation için JUNIT kullandım. Log için Log4j kullandım.
 Page Object Model Design Pattern kullandım. Bunu oluşturarak her modül için Web Elementleri locate ettim ve ortak metodları bunun içine aldım. 
