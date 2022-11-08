@@ -1,3 +1,7 @@
+
+
+https://user-images.githubusercontent.com/97681607/200600500-f2034dbf-9923-4d4e-a69c-ad7f488b3da6.mp4
+
 Kullanılacak Teknolojiler: Selenium
 Konu: Hepsiburada.com üzerinden sepete ürün eklenmesi 
 
